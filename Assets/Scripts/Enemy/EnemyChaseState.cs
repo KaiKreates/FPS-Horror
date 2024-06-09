@@ -12,7 +12,6 @@ public class EnemyChaseState : EnemyBaseState
     {
         //Rotate towards target position
         Vector3 lookDir = Vector3.RotateTowards(enemy.transform.forward, enemy.targetPos - enemy.transform.position, 1 * Time.deltaTime, 0);
-        Debug.Log("LookDir: " + lookDir);
         enemy.transform.rotation = Quaternion.LookRotation(lookDir);
 
         //Move Forward

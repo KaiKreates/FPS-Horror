@@ -20,7 +20,7 @@ public class EnemySearchState : EnemyBaseState
 
     void DetectPlayer(EnemyStateManager enemy)
     {
-        for (int i = -10; i <= 10; i++)
+        for (int i = -20; i <= 20; i++)
         {
             //Player Detection
             var dir2 = Quaternion.Euler(0, i * 9, 0) * enemy.transform.forward;
